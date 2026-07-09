@@ -14,14 +14,19 @@ public class Main {
 //        floriansTasse.form = "abgerundet";
 //        floriansTasse.color = new String[]{"grau", "weiß"};
 
-        System.out.println(floriansTasse.size);
-        System.out.println(floriansTasse.thermo);
-        System.out.println(floriansTasse.material);
-        System.out.println(floriansTasse.form);
+        floriansTasse.setColor(new String[]{"grau", "weiß"});
+
+        System.out.println(floriansTasse.getColor());
+        System.out.println(floriansTasse.isThermo());
+        System.out.println(floriansTasse.getForm());
+        System.out.println(floriansTasse.getMaterial());
 
 
         Tasse stanislavsTasse = new Tasse("metall", 200, false, new String[]{"schwarz", "silber"}, "round");
         Tasse jpTasse = new Tasse("material");
+
+
+        System.out.println(floriansTasse.toString());
 
     }
 }
